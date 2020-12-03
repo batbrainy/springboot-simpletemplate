@@ -1,0 +1,15 @@
+spring.batch.initialize-schema: always
+spring:
+  datasource:
+    url: jdbc:h2:file:a:\myappdb_intu
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+    open-in-view: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
